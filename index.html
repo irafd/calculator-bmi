@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Онлайн калькулятор</h1>
+      <h2>ІМТ - індекс маси тіла</h2>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="row">
+          <div class="inputbmi">
+            <label class="inputbmi" for="weight">Маса тіла (кг):</label>
+            <input
+              id="weight"
+              type="number"
+              class="inputnum"
+              placeholder="Введіть масу:"
+            />
+          </div>
+          <div class="inputbmi">
+            <label for="height">Ріст(cм):</label>
+            <input
+              id="height"
+              type="number"
+              class="inputnum"
+              placeholder="Введіть picт:"
+            />
+          </div>
+          <button class="btn" id="btn" type="submit" onclick="calculateBMI()">
+            ІМТ
+          </button>
+        </div>
+      </div>
+      <p id="result" class="result"></p>
+    </main>
+    <footer></footer>
+  </body>
+</html>
